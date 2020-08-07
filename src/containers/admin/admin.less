@@ -1,0 +1,202 @@
+.admin_box {
+  width: 100vw;
+  height: 100vh;
+  .header {
+    display: block;
+    background-color: #fff;
+    color: #938d8d;
+    line-height: 20px;
+    padding: 0;
+  }
+  .footer {
+    text-align: center;
+    padding: 40px 50px;
+  }
+}
+.hid {
+  display: none;
+}
+
+.header_box {
+  display: block;
+  width: 100%;
+  height: 100%;
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50%;
+    width: 100%;
+    padding-right: 20px;
+    border-bottom: 2px solid #acb6da;
+    cursor: pointer;
+    .tips {
+      margin-left: 16px;
+    }
+  }
+  .bom {
+    height: 50%;
+    width: 100%;
+    padding-right: 35px;
+    .weather {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 25px;
+      background-color: #ff7b00;
+      border-radius: 4px;
+      margin: 0 8px;
+    }
+    .icon {
+      display: flex;
+      width: 20px;
+      height: 20px;
+      // background-image: url('../../assets/images/rain.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    .rain {
+      background-color: #1587e5;
+      .icon {
+        background-image: url('../../assets/images/rain.png');
+      }
+    }
+    .sun {
+      background-color: #ff7b00;
+      .icon {
+        background-image: url('../../assets/images/sun.png');
+      }
+    }
+    .cloud {
+      background-color: #1587e5;
+      .icon {
+        background-image: url('../../assets/images/cloud.png');
+      }
+    }
+    .title {
+      position: relative;
+      font-size: 20px;
+      margin-left: 60px;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -260%;
+        left: 50%;
+        transform: translateX(-50%);
+        // background-color: red;
+        border-bottom: 20px solid transparent;
+        border-top: 20px solid #fff;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        
+      }
+    }
+  }
+}
+
+.content {
+  position: relative;
+  padding: 30px 30px 0;
+  .full_btn {
+    position: absolute;
+    right: 0px;
+    top: 0px ;
+  }
+  .box {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    // border-radius: 10px;
+  }
+}
+
+.slider {
+  position: relative;
+  padding-top: 100px;
+  .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #525664;
+    color: #fff;
+    padding-left: 20px;
+    .logo {
+      width: 50px;
+      height: 45px;
+      background-image: url('../../assets//images/logo.png');
+      background-size: 100% 100%;
+      margin-right: 4px;
+    }
+    h1 {
+      // font-size: ;
+      font-size: 20px;
+      color: #d3cecc;
+    }
+  }
+}
+
+// 计算器
+.cal_box {
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  left: 50%;
+  padding: 160px 30px 30px;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 10px 10px 16px -8px rgba(0,0,0,0.1),-10px -10px 16px -8px rgba(165,170,187,0.1);
+}
+.cal_box .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: skyblue;
+  cursor: pointer;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: #9396a4;
+  font-weight: 500;
+  box-shadow: 4px 4px 10px -8px rgba(0,0,0,0.7),-4px -4px 10px -8px rgba(0,0,0,0.7);
+  background: linear-gradient(135deg,rgba(246,246,246,1) 0%,rgba(255,255,255,1) 100%);
+}
+.cal_box  .button-0 {
+  width: 128px;
+  border-radius: 30px;
+}
+.cal_box .button:active {
+  box-shadow: 1px 1px 1px -2px rgba(0,0,0,0.7),-1px -1px 1px -2px rgba(0,0,0,0.7);
+}
+
+.input_box {
+  position: absolute;
+  padding: 20px 30px 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  
+  input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #586db7;
+  }
+}
+
+.cal_box  .theme_color {
+  color: #586db7;
+}
